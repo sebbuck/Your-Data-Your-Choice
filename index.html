@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Data, Your Call</title>
+  <meta name="description" content="Plain-language guides to what your phone, AI tools and social media do with your personal information, and what you can do about it.">
+  <meta name="referrer" content="no-referrer">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">Your Data, Your Call</a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#topics">Topics</a></li>
+          <li><a href="#plan">Starter plan</a></li>
+          <li><a href="#glossary">Glossary</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">Your data, your call.</h1>
+          <p class="lede">Your phone, the AI tools you try and the social media you scroll all collect information about you. This site explains how, in plain language, and helps you decide what to do about it.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#plan">Make my starter plan</a>
+            <a class="btn btn-quiet" href="#topics">Browse the topics</a>
+          </div>
+          <p class="hero-note">No account, no tracking, nothing sent anywhere. It takes about a minute.</p>
+        </div>
+
+        <div class="hero-demo">
+          <p class="demo-intro" id="demo-intro">Try it. A weather app you just installed asks for this. What do you tap?</p>
+          <div class="device" role="group" aria-labelledby="demo-intro">
+            <p class="device-title">Allow <strong>Weather Now</strong> to access this device's location?</p>
+            <div class="device-buttons">
+              <button type="button" class="device-btn" data-choice="while" aria-pressed="false">While using the app</button>
+              <button type="button" class="device-btn" data-choice="once" aria-pressed="false">Only this time</button>
+              <button type="button" class="device-btn" data-choice="deny" aria-pressed="false">Don't allow</button>
+            </div>
+          </div>
+          <p class="demo-outcome" id="demo-outcome" aria-live="polite">Pick one to see what it means.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="topics" aria-labelledby="topics-title">
+      <div class="wrap">
+        <h2 id="topics-title">Three places your data goes</h2>
+        <p class="section-intro">Each lesson takes a few minutes. You don't need any technical background, and you can skip around.</p>
+        <div id="topic-list" class="topic-list"></div>
+        <noscript><p class="notice">This site needs JavaScript to show its lessons and quiz. It doesn't use JavaScript to track you.</p></noscript>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="plan" aria-labelledby="plan-title">
+      <div class="wrap">
+        <h2 id="plan-title">Make your starter plan</h2>
+        <p class="section-intro">Answer three quick questions and get a short checklist matched to your phone and your time. Your answers and progress stay on this device.</p>
+
+        <div id="quiz-wrap" class="panel">
+          <form id="quiz" novalidate>
+            <fieldset>
+              <legend>1. What do you use? Pick all that apply.</legend>
+              <label class="choice"><input type="checkbox" name="platform" value="ios"> iPhone or iPad</label>
+              <label class="choice"><input type="checkbox" name="platform" value="android"> Android phone or tablet</label>
+              <label class="choice"><input type="checkbox" name="platform" value="other"> Computer only, or not sure</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>2. What do you want to learn about first? Pick at least one.</legend>
+              <label class="choice"><input type="checkbox" name="topic" value="phone"> Data tracking on my phone</label>
+              <label class="choice"><input type="checkbox" name="topic" value="ai"> Privacy with AI tools</label>
+              <label class="choice"><input type="checkbox" name="topic" value="social"> Tracking on social media</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>3. How much time do you have today?</legend>
+              <label class="choice"><input type="radio" name="minutes" value="10"> About 10 minutes</label>
+              <label class="choice"><input type="radio" name="minutes" value="20" checked> About 20 minutes</label>
+              <label class="choice"><input type="radio" name="minutes" value="40"> About 40 minutes</label>
+            </fieldset>
+
+            <p id="form-error" class="form-error" role="alert" hidden>Pick at least one topic in question 2 to build your plan.</p>
+            <button type="submit" class="btn btn-primary">Make my plan</button>
+          </form>
+        </div>
+
+        <div id="plan-result" class="plan-result" aria-live="polite" tabindex="-1"></div>
+      </div>
+    </section>
+
+    <section class="section" id="glossary" aria-labelledby="glossary-title">
+      <div class="wrap">
+        <h2 id="glossary-title">Words you'll run into</h2>
+        <dl id="glossary-list" class="glossary"></dl>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <h2 id="about-title">How this site treats your data</h2>
+        <p class="section-intro">A privacy guide should follow its own advice. As built, this site:</p>
+        <ul class="promise-list">
+          <li>has no accounts, analytics, cookies or advertising;</li>
+          <li>loads no outside fonts, scripts or images, so your browser contacts only this site;</li>
+          <li>saves your plan only in your browser's local storage on this device, and "Start over" erases it.</li>
+        </ul>
+        <p>Like any website, the company that hosts it can see basic connection details such as your IP address.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Prototype. Last reviewed <span id="reviewed-date"></span>.</p>
+      <p>This site gives general information, not legal or technical advice. Menu names differ between devices, apps and versions, so use the search box in Settings if you can't find something.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
