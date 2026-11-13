@@ -1,0 +1,16 @@
+title: Your Data, Your Call
+description: Digital rights, privacy and practical tools for young Canadians.
+url: "https://sebbuck.github.io"
+baseurl: "/Your-Data-Your-Choice"
+lang: en-CA
+markdown: kramdown
+permalink: /:categories/:title/
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules

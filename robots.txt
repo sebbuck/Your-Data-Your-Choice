@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sebbuck.github.io/Your-Data-Your-Choice/sitemap.xml
